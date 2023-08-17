@@ -16,3 +16,12 @@
 .gutter-1 {
   margin: 1%;
 }
+
+.flex-bottom-box {
+  display: flex;
+  align-items: center;
+}
+
+.button-with-40 {
+  width: 40%
+}

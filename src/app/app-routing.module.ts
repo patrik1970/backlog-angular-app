@@ -6,7 +6,6 @@ import { IssueTableComponent } from './components/issue-table/issue-table.compon
 const routes: Routes = [
   { path: '',  component: IssueTableComponent },
   { path: 'issue-table', component: IssueTableComponent },
-  { path: 'issue-card', component: IssueCardComponent }
 ];
 
 @NgModule({

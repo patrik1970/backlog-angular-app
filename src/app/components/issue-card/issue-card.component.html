@@ -1,37 +1,56 @@
 <mat-card>
     <form class="example-form">
         <div class="flex-upper-box">
+
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Title</mat-label>
-                <input matInput value="">
+                <input matInput name="title" placeholder="Write a title" [(ngModel)]="this.title">
             </mat-form-field>
+
             <div class="gutter-1"></div>
+
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Priority</mat-label>
-                <input matInput value="">
+                <input matInput name="priority" placeholder="Write a priortynumber from 1 to 3" [(ngModel)]="this.priority">
             </mat-form-field>
+
             <div class="gutter-1"></div>
+
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>IssueType</mat-label>
-                <input matInput value="">
+                <input matInput name="issueType" placeholder="Write a issueTypenumber from 1 to 3" [(ngModel)]="this.issueType">
             </mat-form-field>
+
         </div>
         <mat-form-field class="example-full-width" appearance="outline">
             <mat-label>Description</mat-label>
-            <textarea matInput></textarea>
+            <textarea matInput name="description" placeholder="Write a description" [(ngModel)]="this.description"></textarea>
         </mat-form-field>
-        <div>
-        <mat-form-field class="example-full-width" appearance="outline">
-            <mat-label>Title</mat-label>
-            <input matInput value="">
-        </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="outline">
-            <mat-label>Priority</mat-label>
-            <input matInput value="">
-        </mat-form-field>
-        <button mat-stroked-button color="primary">Primary</button>
-        <button mat-stroked-button color="primary">Primary</button>
-        <button mat-stroked-button color="primary">Primary</button>
+
+        <div class="flex-bottom-box">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Created</mat-label>
+                <input matInput name="created" placeholder="Write the created date YYYY-MM-DD" [(ngModel)]="this.created">
+            </mat-form-field>
+
+            <div class="gutter-1"></div>
+
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Completed</mat-label>
+                <input matInput name="completed" placeholder="Write the completed date YYYY-MM-DD" [(ngModel)]="this.completed">
+            </mat-form-field>
+
+            <div class="gutter-1"></div>
+
+            <button mat-stroked-button class="button-with-40" color="primary">Abort</button>
+
+            <div class="gutter-1"></div>
+
+            <button mat-stroked-button class="button-with-40" color="primary">Save</button>
+
+            <div class="gutter-1"></div>
+            
+            <button mat-stroked-button class="button-with-40" color="primary">Delete</button>
         </div>
-</form>
+    </form>
 </mat-card>

@@ -49,9 +49,9 @@
   <ng-container matColumnDef="action">
     <th mat-header-cell *matHeaderCellDef> Öppna </th>
     <td mat-cell *matCellDef="let element">
-      <a>
-        <span class="material-icons" [routerLink]="['/issue-card']">open_in_new</span>
-      </a>
+       <a (click)="openIssueCardDialog(element)">  
+          <span class="material-icons">open_in_new</span>
+        </a> 
     </td>
   </ng-container>
 

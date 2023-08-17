@@ -10,8 +10,10 @@ import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
 import { IssueCardComponent } from './components/issue-card/issue-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { IssueCardComponent } from './components/issue-card/issue-card.component
     MatTableModule,
     MatCardModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
